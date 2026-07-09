@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiranjeevi V - Senior SDET Engineer | AI-Driven Test Automation Architect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #e0e7ff;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #ffd700;
+        }
+
+        nav {
+            background: #333;
+            position: sticky;
+            top: 180px;
+            z-index: 999;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-size: 0.95em;
+        }
+
+        nav a:hover {
+            background: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        section h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .profile-summary {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .expertise-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .expertise-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .expertise-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .expertise-card li {
+            padding: 5px 0;
+            color: #666;
+        }
+
+        .expertise-card li:before {
+            content: "• ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .achievement {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .achievement-title {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .achievement-description {
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .project {
+            background: #f8f9fa;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #667eea;
+        }
+
+        .project-title {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-overview {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .project-metrics {
+            background: #e8eef7;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            background: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .cert-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+
+        .cert-name {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .cert-year {
+            color: #999;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .cert-description {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+
+        .skill-matrix {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .skill-matrix table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skill-matrix th, .skill-matrix td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .skill-matrix th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+
+        .skill-matrix tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .journey-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .journey-period {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        .journey-role {
+            color: #333;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .journey-description {
+            color: #666;
+            margin-top: 8px;
+            font-size: 0.95em;
+        }
+
+        .contact-section {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%) !important;
+        }
+
+        .contact-section ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid #667eea;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px 5px;
+            transition: background 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+        }
+
+        .metric-box {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin: 10px 10px 10px 0;
+            text-align: center;
+            min-width: 180px;
+        }
+
+        .metric-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .title {
+                font-size: 1.1em;
+            }
+
+            .contact-info {
+                gap: 15px;
+                font-size: 0.85em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px 15px;
+                border-bottom: 1px solid #555;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metric-box {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>SHIRANJEEVI V</h1>
+            <p class="title">Senior SDET Engineer | AI-Driven Test Automation Architect</p>
+            <div class="contact-info">
+                <span>📧 shiranjeeevi007@gmail.com</span>
+                <span>📱 +91-6383778113</span>
+                <span>🔗 LinkedIn: Shiranjeevi V</span>
+                <span>💻 GitHub: Available</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>01. Professional Profile</h2>
+            <p class="profile-summary">
+                Senior SDET Engineer with <span class="highlight">4.5+ years</span> of expertise architecting 
+                enterprise-scale test automation frameworks across mobile (iOS/Android), web, and API ecosystems. 
+                <span class="highlight">AI-driven automation innovator</span> leveraging Amazon Q, GitHub Copilot, 
+                and self-healing test scripts to transform testing practices. Proven track record of delivering 
+                measurable business impact through intelligent CI/CD automation, achieving <span class="highlight">85% 
+                test coverage</span> and reducing defect triage time by <span class="highlight">87.5%</span>. 
+                Dedicated to mentoring teams and driving innovation in test automation at enterprise scale.
+            </p>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise">
+            <h2>02. Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h4>Test Automation Frameworks</h4>
+                    <ul>
+                        <li>Selenium WebDriver (Expert)</li>
+                        <li>Appium iOS & Android (Expert)</li>
+                        <li>Playwright (Advanced)</li>
+                        <li>Mocha Framework (Advanced)</li>
+                        <li>Cucumber BDD (Expert)</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <h4>AI & Intelligent QA</h4>
+                    <ul>
+                        <li>Amazon Q Code Generation</li>
+                        <li>GitHub Copilot</li>
+                        <li>KIRO/KODA AI Accelerators</li>
+                        <li>Self-Healing Test Scripts</li>
+                        <li>ML Test Prioritization</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Java (Expert, Spring Boot)</li>
+                        <li>Python (Advanced, Flask)</li>
+                        <li>JavaScript/Node.js</li>
+                        <li>Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <h4>API & Backend Testing</h4>
+                    <ul>
+                        <li>REST API Automation</li>
+                        <li>Database Testing (MySQL, PostgreSQL)</li>
+                        <li>Microservices Testing</li>
+                        <li>Data Integrity Validation</li>
+                        <li>Mock Services</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <h4>CI/CD & DevOps</h4>
+                    <ul>
+                        <li>Jenkins (Expert)</li>
+                        <li>Git/GitHub</li>
+                        <li>qTest Management</li>
+                        <li>JIRA Integration</li>
+                        <li>Docker & Linux</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <h4>Specializations</h4>
+                    <ul>
+                        <li>Cross-Platform Automation</li>
+                        <li>Multilingual Frameworks</li>
+                        <li>BDD Implementation</li>
+                        <li>Backend Validation</li>
+                        <li>Performance Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements -->
+        <section id="achievements">
+            <h2>03. Key Achievements & Impact</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; margin-bottom: 30px;">
+                <div class="metric-box">
+                    <span class="metric-number">85%</span>
+                    <span class="metric-label">Test Coverage</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-number">50%</span>
+                    <span class="metric-label">Dev Time Reduction</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-number">87.5%</span>
+                    <span class="metric-label">Triage Time Reduction</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-number">95%</span>
+                    <span class="metric-label">API Coverage</span>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-title">✓ 85% Test Code Coverage</div>
+                <div class="achievement-description">Architected cross-platform framework covering 200+ test scenarios across web, mobile (iOS/Android), and REST APIs</div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-title">✓ 50% Development Time Reduction</div>
+                <div class="achievement-description">Implemented Amazon Q and GitHub Copilot for intelligent test script generation (4 days → 2 days per 100-line suite)</div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-title">✓ 87.5% Triage Time Reduction</div>
+                <div class="achievement-description">Deployed KODA-powered failure analysis, reducing defect root cause investigation from 2 hours to 15 minutes</div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-title">✓ 45% Maintenance Overhead Reduction</div>
+                <div class="achievement-description">Built self-healing test automation and intelligent failure analysis implementation</div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-title">✓ 40% Defect Resolution SLA Improvement</div>
+                <div class="achievement-description">Unified Jenkins, qTest, JIRA integration enabling automated defect logging with rich metadata</div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-title">✓ 95% API Coverage</div>
+                <div class="achievement-description">Comprehensive REST API automation with database cross-validation, detecting 50+ pre-production issues</div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects">
+            <h2>04. Featured Projects</h2>
+
+            <div class="project">
+                <div class="project-title">🎯 Enterprise Mobile Automation - Global Multilingual Framework</div>
+                <div class="project-overview">Led automation of iOS and Android applications supporting 8+ languages for global market</div>
+                <div style="margin-top: 10px;">
+                    <strong>Key Achievements:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Architected multilingual automation framework with dynamic runtime language selection</li>
+                        <li>Implemented BDD using Cucumber for improved test readability</li>
+                        <li>Achieved 85% functional coverage across critical user journeys</li>
+                        <li>Reduced regression execution time by 35%</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">Tech Stack: Appium, Cucumber BDD, KIRO/KODA, qTest, Jenkins</div>
+                <div class="project-metrics">📊 Impact: 85% automation | 35% faster regression | 8-language support</div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">🤖 AI-Assisted Web Automation with Intelligent Failure Analysis</div>
+                <div class="project-overview">Implemented cutting-edge AI-driven test automation reducing development time and maintenance</div>
+                <div style="margin-top: 10px;">
+                    <strong>Key Achievements:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Deployed Amazon Q for intelligent test script generation</li>
+                        <li>Integrated GitHub Copilot for rapid test maintenance</li>
+                        <li>Automated root cause detection reducing triage time by 87.5% (2hrs → 15min)</li>
+                        <li>Stabilized regression suites during critical release phases</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">Tech Stack: Selenium WebDriver, Amazon Q, GitHub Copilot, KODA, qTest, JIRA, Jenkins</div>
+                <div class="project-metrics">📊 Impact: 50% dev time reduction | 87.5% triage reduction | 100% coverage</div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">📡 API Automation & Backend Validation with Database Cross-Validation</div>
+                <div class="project-overview">Built comprehensive API testing framework with integrated database validation</div>
+                <div style="margin-top: 10px;">
+                    <strong>Key Achievements:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Designed comprehensive REST API test suites with request/response validation</li>
+                        <li>Implemented database assertions validating data consistency</li>
+                        <li>Detected 50+ production-critical data integrity issues pre-release</li>
+                        <li>Achieved 95% API coverage with continuous build verification</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">Tech Stack: Mocha, Node.js, REST APIs, MySQL, PostgreSQL, Python, Jenkins</div>
+                <div class="project-metrics">📊 Impact: 95% API coverage | 50+ issues detected | 30% defect reduction</div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">🧠 ML-Driven Test Dashboard & Intelligent Reporting Automation</div>
+                <div class="project-overview">Developed internal automation dashboard leveraging ML for test case prioritization</div>
+                <div style="margin-top: 10px;">
+                    <strong>Key Achievements:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Built Flask-based automation dashboard using Playwright</li>
+                        <li>Implemented ML algorithms analyzing historical test failure data</li>
+                        <li>Optimized test case prioritization reducing execution time</li>
+                        <li>Automated stakeholder reports reducing overhead by 60%</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">Tech Stack: Playwright, Python, Flask, Scikit-learn, ML algorithms</div>
+                <div class="project-metrics">📊 Impact: 60% reporting automation | ML-optimized execution | Data-driven insights</div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">⚙️ Intelligent CI/CD Quality Gates Integration</div>
+                <div class="project-overview">Unified Jenkins, qTest, and JIRA for seamless test execution and defect tracking</div>
+                <div style="margin-top: 10px;">
+                    <strong>Key Achievements:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Designed intelligent CI/CD quality gates</li>
+                        <li>Automated defect logging with rich metadata (execution logs, stack traces, screenshots)</li>
+                        <li>Enabled real-time defect tracking and notification</li>
+                        <li>Improved defect resolution SLA by 40%</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">Tech Stack: Jenkins, qTest, JIRA, Git/GitHub, CI/CD pipelines</div>
+                <div class="project-metrics">📊 Impact: 40% SLA improvement | 100% automated logging | Seamless integration</div>
+            </div>
+        </section>
+
+        <!-- Certifications & Recognition -->
+        <section id="certifications">
+            <h2>05. Certifications & Recognition</h2>
+
+            <div class="cert-item">
+                <span class="cert-name">✓ Databricks – Generative AI Engineer Associate</span>
+                <span class="cert-year">2024</span>
+                <div class="cert-description">Advanced understanding of generative AI and machine learning applications in testing</div>
+            </div>
+
+            <div class="cert-item">
+                <span class="cert-name">✓ IBM – Data Science Professional Certificate</span>
+                <span class="cert-year">2023</span>
+                <div class="cert-description">Data analysis, Python, ML algorithms, statistical methods</div>
+            </div>
+
+            <div class="cert-item">
+                <span class="cert-name">✓ NPTEL – Java Programming Certification</span>
+                <span class="cert-year">2022</span>
+                <div class="cert-description">Advanced Java, object-oriented programming, design patterns</div>
+            </div>
+
+            <div class="cert-item">
+                <span class="cert-name">✓ Runner-up – Smart India Hackathon 2020</span>
+                <span class="cert-year">2020</span>
+                <div class="cert-description">MHRD, AICTE, Persistent Systems - Innovation in problem-solving</div>
+            </div>
+
+            <div class="cert-item">
+                <span class="cert-name">✓ LeetCode – 400+ DSA Problems Solved</span>
+                <span class="cert-year">Ongoing</span>
+                <div class="cert-description">Top performer in data structures and algorithms</div>
+            </div>
+
+            <div class="cert-item">
+                <span class="cert-name">✓ HackerRank – Gold Badge (Java), Silver Badge (Problem Solving)</span>
+                <span class="cert-year">Ongoing</span>
+                <div class="cert-description">Expert-level coding proficiency</div>
+            </div>
+        </section>
+
+        <!-- Professional Journey -->
+        <section id="journey">
+            <h2>06. Professional Journey</h2>
+
+            <div class="journey-item">
+                <div class="journey-period">2022 - Present</div>
+                <div class="journey-role">Senior SDET Engineer @ Accenture, Bengaluru</div>
+                <div class="journey-description">
+                    Leading test automation architecture, pioneering AI implementation, mastering CI/CD integration, 
+                    and mentoring team members on SDET best practices and framework design patterns.
+                </div>
+            </div>
+
+            <div class="journey-item">
+                <div class="journey-period">2020 - 2022</div>
+                <div class="journey-role">QA Automation Engineer @ [Previous Company]</div>
+                <div class="journey-description">
+                    Developed Selenium framework for web applications, implemented API automation, 
+                    and designed comprehensive test strategies.
+                </div>
+            </div>
+
+            <div class="journey-item">
+                <div class="journey-period">2017 - 2021</div>
+                <div class="journey-role">Education</div>
+                <div class="journey-description">
+                    Bachelor of Engineering (B.E.) in Computer Science & Engineering from Sona College of Technology
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>07. Get In Touch</h2>
+            <p style="margin-bottom: 20px;">
+                I'm always interested in discussing test automation, AI-driven QA, and career opportunities. 
+                Feel free to reach out!
+            </p>
+            
+            <ul>
+                <div class="contact-item">
+                    <span>📧 Email</span><br>
+                    <a href="mailto:shiranjeeevi007@gmail.com">shiranjeeevi007@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱 Phone</span><br>
+                    <a href="tel:+916383778113">+91-6383778113</a>
+                </div>
+                <div class="contact-item">
+                    <span>🔗 LinkedIn</span><br>
+                    <a href="https://linkedin.com/in/shiranjeevi-v-sdet" target="_blank">linkedin.com/in/shiranjeevi-v-sdet</a>
+                </div>
+                <div class="contact-item">
+                    <span>💻 GitHub</span><br>
+                    <a href="https://github.com/shiranjeevi-v" target="_blank">github.com/shiranjeevi-v</a>
+                </div>
+            </ul>
+
+            <div style="margin-top: 30px;">
+                <button class="btn" onclick="alert('Thank you for your interest! I will get back to you shortly.')">Get My Resume</button>
+                <button class="btn" onclick="alert('Let\\'s schedule a call! Email me to arrange a time.')">Schedule a Call</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shiranjeevi V. All Rights Reserved.</p>
+        <p>Senior SDET Engineer | AI-Driven Test Automation Architect | Enterprise Quality Assurance Expert</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">
+            Thank you for visiting my portfolio. I'm passionate about transforming testing through innovation and excellence.
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
