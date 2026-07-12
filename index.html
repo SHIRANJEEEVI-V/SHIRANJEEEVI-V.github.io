@@ -64,13 +64,18 @@
             background: rgba(255,255,255,0.2);
         }
 
-        /* Desktop Sticky Navigation Bar Layout */
+        /* ─── NAVIGATION (DESKTOP DEFAULT) ─── */
         nav {
             background: #333;
             position: sticky;
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Hidden elements used for the mobile hamburger toggle logic */
+        .menu-toggle, .hamburger-label {
+            display: none;
         }
 
         nav ul {
@@ -80,10 +85,6 @@
             flex-wrap: wrap;
             max-width: 1200px;
             margin: 0 auto;
-        }
-
-        nav li {
-            width: auto;
         }
 
         nav a {
@@ -120,12 +121,6 @@
             margin-bottom: 20px;
             border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
-        }
-
-        section h3 {
-            color: #764ba2;
-            margin-top: 20px;
-            margin-bottom: 10px;
         }
 
         .profile-summary {
@@ -364,10 +359,6 @@
             background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
         }
 
-        .btn-download:active {
-            transform: translateY(-1px);
-        }
-
         .metrics-container {
             display: flex;
             flex-wrap: wrap;
@@ -396,7 +387,7 @@
             margin-top: 5px;
         }
 
-        /* 📱 Fixed Mobile Styles for Sleek Responsive Navigation */
+        /* 📱 ─── MOBILE LAYOUT (HAMBURGER ACTIVATION) ─── */
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -415,29 +406,40 @@
                 border-radius: 8px;
             }
 
-            /* ✅ Fix: Transform Menu into Horizontal Swipe Bar instead of stacked block */
+            /* Display the hamburger trigger icon wrapper */
+            .hamburger-label {
+                display: block;
+                color: white;
+                font-size: 1.6em;
+                padding: 12px 20px;
+                cursor: pointer;
+                text-align: right;
+                font-weight: bold;
+                background: #252525;
+            }
+
+            /* Hide the list links by default on mobile load */
             nav ul {
-                flex-direction: row;
-                flex-wrap: nowrap;
-                overflow-x: auto;
-                justify-content: flex-start;
-                -webkit-overflow-scrolling: touch; /* Smooth scrolling physics for iOS */
-                padding: 0 5px;
+                display: none;
+                flex-direction: column;
+                background: #333;
+                width: 100%;
             }
 
             nav li {
-                flex: 0 0 auto; /* Stop elements from shrinking down */
+                width: 100%;
+                border-bottom: 1px solid #444;
             }
 
             nav a {
-                padding: 14px 18px;
-                font-size: 0.9em;
-                border-bottom: none;
+                padding: 15px;
+                text-align: left;
+                font-size: 1.05em;
             }
 
-            /* Hide ugly scrollbar tracks for modern systems */
-            nav ul::-webkit-scrollbar {
-                display: none;
+            /* Pure CSS Trigger: When checkbox is checked, immediately show the navigation list */
+            .menu-toggle:checked ~ ul {
+                display: flex;
             }
 
             section {
@@ -477,8 +479,10 @@
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation with Option C Hamburger Toggle Components -->
     <nav>
+        <input type="checkbox" id="menu-checkbox" class="menu-toggle">
+        <label for="menu-checkbox" class="hamburger-label">☰ MENU</label>
         <ul>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#expertise">Expertise</a></li>
@@ -837,10 +841,17 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling & automatic close panel logic for mobile
+        const menuCheckbox = document.getElementById('menu-checkbox');
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
+                
+                // Automatically close hamburger drawer when item is tapped
+                if (window.innerWidth <= 768) {
+                    menuCheckbox.checked = false;
+                }
+                
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
                 if(targetSection) {
