@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiranjeevi V - Senior SDET Engineer | Portfolio</title>
+    <title>Shiranjeeevi V - Senior SDET Engineer | AI-Driven Test Automation Architect</title>
     <style>
         * {
             margin: 0;
@@ -11,28 +11,19 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
         }
 
-        /* ========== HEADER ========== */
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .header-content {
@@ -40,47 +31,45 @@
             margin: 0 auto;
         }
 
-        header h1 {
-            font-size: clamp(1.8em, 5vw, 2.5em);
+        h1 {
+            font-size: 2.5em;
             margin-bottom: 10px;
-            letter-spacing: 0.5px;
         }
 
         .title {
-            font-size: clamp(0.95em, 3vw, 1.3em);
+            font-size: 1.3em;
             margin-bottom: 20px;
             color: #e0e7ff;
-            font-weight: 500;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: clamp(15px, 3vw, 30px);
+            gap: 20px;
             flex-wrap: wrap;
-            font-size: clamp(0.85em, 2vw, 0.95em);
+            font-size: 0.95em;
         }
 
         .contact-info a {
             color: white;
             text-decoration: none;
-            transition: color 0.3s ease;
-            word-break: break-word;
+            transition: color 0.3s;
+            background: rgba(255,255,255,0.1);
+            padding: 6px 12px;
+            border-radius: 20px;
         }
 
         .contact-info a:hover {
             color: #ffd700;
+            background: rgba(255,255,255,0.2);
         }
 
-        /* ========== NAVIGATION ========== */
         nav {
             background: #333;
             position: sticky;
-            top: 100%;
-            z-index: 999;
+            top: 0;
+            z-index: 1000;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
         }
 
         nav ul {
@@ -90,94 +79,77 @@
             flex-wrap: wrap;
             max-width: 1200px;
             margin: 0 auto;
-            gap: 0;
         }
 
         nav li {
-            flex: 0 1 auto;
+            width: auto;
         }
 
         nav a {
             display: block;
             color: white;
-            padding: clamp(10px, 2vw, 12px) clamp(12px, 3vw, 20px);
+            padding: 15px 20px;
             text-decoration: none;
-            transition: background 0.3s ease;
-            font-size: clamp(0.8em, 2vw, 0.95em);
-            white-space: nowrap;
-            border-bottom: 3px solid transparent;
+            transition: background 0.3s;
+            font-size: 0.95em;
+            text-align: center;
         }
 
         nav a:hover {
             background: #667eea;
-            border-bottom-color: #ffd700;
         }
 
-        /* ========== MAIN CONTAINER ========== */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: clamp(20px, 5vw, 40px);
+            padding: 30px 15px;
         }
 
         section {
             background: white;
-            margin-bottom: clamp(20px, 5vw, 30px);
-            padding: clamp(20px, 5vw, 40px);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            overflow-x: hidden;
+            margin-bottom: 30px;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         section h2 {
             color: #667eea;
-            font-size: clamp(1.5em, 5vw, 2em);
-            margin-bottom: clamp(15px, 3vw, 20px);
+            font-size: 1.8em;
+            margin-bottom: 20px;
             border-bottom: 3px solid #667eea;
-            padding-bottom: clamp(8px, 2vw, 10px);
-            letter-spacing: 0.3px;
+            padding-bottom: 10px;
         }
 
         section h3 {
             color: #764ba2;
-            margin-top: clamp(15px, 3vw, 20px);
-            margin-bottom: clamp(8px, 2vw, 10px);
-            font-size: clamp(1.1em, 3vw, 1.3em);
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
-        /* ========== PROFILE SUMMARY ========== */
         .profile-summary {
-            font-size: clamp(0.95em, 2vw, 1.05em);
+            font-size: 1.05em;
             line-height: 1.8;
             color: #555;
-            text-align: justify;
         }
 
-        /* ========== EXPERTISE GRID ========== */
         .expertise-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: clamp(15px, 3vw, 20px);
-            margin-top: clamp(15px, 3vw, 20px);
+            gap: 20px;
+            margin-top: 20px;
         }
 
         .expertise-card {
             background: #f8f9fa;
-            padding: clamp(15px, 3vw, 20px);
+            padding: 20px;
             border-radius: 8px;
             border-left: 4px solid #667eea;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .expertise-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.15);
         }
 
         .expertise-card h4 {
             color: #667eea;
-            margin-bottom: clamp(8px, 2vw, 10px);
-            font-size: clamp(1em, 2vw, 1.1em);
+            margin-bottom: 10px;
         }
 
         .expertise-card ul {
@@ -186,9 +158,8 @@
         }
 
         .expertise-card li {
-            padding: clamp(4px, 1vw, 5px) 0;
+            padding: 5px 0;
             color: #666;
-            font-size: clamp(0.85em, 2vw, 0.95em);
         }
 
         .expertise-card li:before {
@@ -198,265 +169,157 @@
             margin-right: 8px;
         }
 
-        /* ========== ACHIEVEMENTS ========== */
         .achievement {
             background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-            padding: clamp(15px, 3vw, 20px);
-            margin-bottom: clamp(12px, 2vw, 15px);
+            padding: 20px;
+            margin-bottom: 15px;
             border-radius: 8px;
             border-left: 4px solid #667eea;
-            transition: transform 0.3s ease;
-        }
-
-        .achievement:hover {
-            transform: translateX(5px);
         }
 
         .achievement-title {
             color: #667eea;
             font-weight: bold;
-            font-size: clamp(0.95em, 2vw, 1.1em);
+            font-size: 1.1em;
         }
 
         .achievement-description {
             color: #555;
             margin-top: 5px;
-            font-size: clamp(0.9em, 2vw, 0.95em);
         }
 
-        /* ========== METRICS ========== */
-        .metrics-container {
-            display: flex;
-            justify-content: center;
-            gap: clamp(10px, 2vw, 15px);
-            flex-wrap: wrap;
-            margin-bottom: clamp(20px, 3vw, 30px);
-        }
-
-        .metric-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: clamp(15px, 3vw, 20px) clamp(20px, 4vw, 30px);
-            border-radius: 8px;
-            text-align: center;
-            min-width: 150px;
-            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .metric-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
-        }
-
-        .metric-number {
-            font-size: clamp(1.5em, 5vw, 1.8em);
-            font-weight: bold;
-            display: block;
-            letter-spacing: 0.5px;
-        }
-
-        .metric-label {
-            font-size: clamp(0.8em, 2vw, 0.9em);
-            margin-top: 5px;
-            opacity: 0.95;
-        }
-
-        /* ========== PROJECTS ========== */
         .project {
             background: #f8f9fa;
-            padding: clamp(18px, 4vw, 25px);
-            margin-bottom: clamp(18px, 3vw, 20px);
+            padding: 25px;
+            margin-bottom: 20px;
             border-radius: 8px;
             border-top: 4px solid #667eea;
-            transition: box-shadow 0.3s ease;
-        }
-
-        .project:hover {
-            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.2);
         }
 
         .project-title {
             color: #667eea;
-            font-size: clamp(1em, 3vw, 1.2em);
+            font-size: 1.2em;
             font-weight: bold;
-            margin-bottom: clamp(8px, 2vw, 10px);
+            margin-bottom: 10px;
         }
 
         .project-overview {
             color: #666;
             font-style: italic;
-            margin-bottom: clamp(10px, 2vw, 15px);
-            font-size: clamp(0.9em, 2vw, 0.95em);
-        }
-
-        .project-achievements {
-            margin: clamp(10px, 2vw, 15px) 0;
-        }
-
-        .project-achievements strong {
-            color: #333;
-            font-size: clamp(0.9em, 2vw, 1em);
-        }
-
-        .project-achievements ul {
-            list-style: none;
-            margin: clamp(8px, 2vw, 10px) 0 0 clamp(15px, 3vw, 20px);
-            padding: 0;
-        }
-
-        .project-achievements li {
-            padding: clamp(4px, 1vw, 6px) 0;
-            font-size: clamp(0.85em, 2vw, 0.9em);
-            color: #555;
-        }
-
-        .project-achievements li:before {
-            content: "✓ ";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .tech-stack {
-            background: #e8eef7;
-            padding: clamp(10px, 2vw, 15px);
-            border-radius: 5px;
-            margin-top: clamp(10px, 2vw, 15px);
-            font-size: clamp(0.85em, 2vw, 0.95em);
-            color: #667eea;
-            font-weight: 500;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+            margin-bottom: 15px;
         }
 
         .project-metrics {
-            background: #d6e4f7;
-            padding: clamp(12px, 2vw, 15px);
+            background: #e8eef7;
+            padding: 15px;
             border-radius: 5px;
-            margin-top: clamp(10px, 2vw, 15px);
+            margin-top: 15px;
             color: #667eea;
             font-weight: bold;
-            font-size: clamp(0.85em, 2vw, 0.95em);
         }
 
-        /* ========== CERTIFICATIONS ========== */
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: clamp(15px, 3vw, 20px);
-            margin-top: clamp(15px, 3vw, 20px);
+        .tech-stack {
+            background: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #666;
         }
 
         .cert-item {
-            padding: clamp(15px, 3vw, 20px);
-            background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f7 100%);
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+            transition: transform 0.2s;
         }
-
+        
         .cert-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.2);
+            transform: translateX(5px);
         }
 
         .cert-name {
             font-weight: bold;
             color: #667eea;
-            font-size: clamp(0.95em, 2vw, 1.05em);
-            margin-bottom: 5px;
+        }
+
+        .cert-link {
+            text-decoration: none;
+            color: #667eea;
+        }
+        
+        .cert-link:hover .cert-name {
+            color: #764ba2;
+            text-decoration: underline;
         }
 
         .cert-year {
             color: #999;
-            font-size: clamp(0.8em, 2vw, 0.85em);
+            font-size: 0.9em;
             display: inline-block;
-            margin-top: 5px;
+            margin-left: 10px;
         }
 
         .cert-description {
             color: #666;
-            font-size: clamp(0.85em, 2vw, 0.9em);
-            margin-top: 8px;
-            line-height: 1.5;
+            font-size: 0.95em;
+            margin-top: 5px;
         }
 
-        /* ========== JOURNEY ========== */
         .journey-item {
-            padding: clamp(15px, 3vw, 20px);
-            margin-bottom: clamp(15px, 3vw, 20px);
+            padding: 20px;
+            margin-bottom: 15px;
             background: #f8f9fa;
             border-radius: 8px;
             border-left: 4px solid #667eea;
-            transition: transform 0.3s ease;
-        }
-
-        .journey-item:hover {
-            transform: translateX(5px);
         }
 
         .journey-period {
             color: #667eea;
             font-weight: bold;
-            font-size: clamp(0.95em, 2vw, 1.05em);
+            font-size: 1.05em;
         }
 
         .journey-role {
             color: #333;
             font-weight: bold;
             margin-top: 5px;
-            font-size: clamp(0.9em, 2vw, 1em);
         }
 
         .journey-description {
             color: #666;
             margin-top: 8px;
-            font-size: clamp(0.85em, 2vw, 0.95em);
-            line-height: 1.6;
+            font-size: 0.95em;
         }
 
-        /* ========== CONTACT SECTION ========== */
         .contact-section {
             text-align: center;
             background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%) !important;
         }
 
-        .contact-grid {
+        .contact-section ul {
+            list-style: none;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: clamp(15px, 3vw, 20px);
-            margin-top: clamp(20px, 3vw, 30px);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
         }
 
         .contact-item {
             background: white;
-            padding: clamp(15px, 3vw, 20px);
+            padding: 20px;
             border-radius: 8px;
             border-top: 3px solid #667eea;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.2);
-        }
-
-        .contact-item-label {
-            color: #333;
-            font-weight: bold;
-            font-size: clamp(0.95em, 2vw, 1.05em);
-            margin-bottom: 10px;
-            display: block;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
         .contact-item a {
             color: #667eea;
             text-decoration: none;
             font-weight: bold;
-            font-size: clamp(0.9em, 2vw, 1em);
             word-break: break-all;
-            transition: color 0.3s ease;
         }
 
         .contact-item a:hover {
@@ -464,259 +327,143 @@
             text-decoration: underline;
         }
 
-        /* ========== BUTTON ========== */
-        .btn {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 30px);
-            border-radius: 5px;
-            text-decoration: none;
-            margin: clamp(8px, 2vw, 10px);
-            transition: background 0.3s ease, transform 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-size: clamp(0.9em, 2vw, 1em);
-            font-weight: 500;
-            word-break: break-word;
-        }
-
-        .btn:hover {
-            background: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
-        }
-
-        .btn:active {
-            transform: translateY(0);
-        }
-
-        /* ========== FOOTER ========== */
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: clamp(20px, 4vw, 30px);
-            margin-top: clamp(30px, 5vw, 50px);
-            font-size: clamp(0.8em, 2vw, 0.95em);
+            padding: 30px 20px;
+            margin-top: 50px;
         }
 
-        footer p {
-            margin: clamp(8px, 2vw, 10px) 0;
+        .download-container {
+            margin: 30px auto 10px auto;
+            max-width: 500px;
         }
 
-        /* ========== MOBILE MENU ICON ========== */
-        .menu-toggle {
-            display: none;
-            background: none;
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            color: white !important;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none !important;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+            transition: all 0.3s ease;
+            width: 100%;
             border: none;
-            color: white;
-            font-size: 1.5em;
-            cursor: pointer;
-            padding: 10px;
         }
 
-        /* ========== RESPONSIVE DESIGN ========== */
-        @media (max-width: 768px) {
-            header {
-                padding: 30px 15px;
-            }
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+            background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
+        }
 
-            header h1 {
-                font-size: 1.6em;
-                margin-bottom: 8px;
+        .btn-download:active {
+            transform: translateY(-1px);
+        }
+
+        .metrics-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .metric-box {
+            flex: 1 1 calc(25% - 15px);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .metric-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
             }
 
             .title {
-                font-size: 1em;
-                margin-bottom: 15px;
+                font-size: 1.1em;
             }
 
             .contact-info {
                 gap: 10px;
-                font-size: 0.8em;
+            }
+            
+            .contact-info a {
+                width: 100%;
+                border-radius: 8px;
             }
 
-            nav {
-                position: sticky;
-                top: 0;
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                width: 100%;
             }
 
             nav a {
-                padding: 10px 12px;
-                font-size: 0.85em;
+                padding: 12px 15px;
+                border-bottom: 1px solid #444;
             }
 
             section {
                 padding: 20px;
-                margin-bottom: 20px;
-            }
-
-            .expertise-grid,
-            .cert-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .metrics-container {
-                gap: 10px;
             }
 
             .metric-box {
-                min-width: 140px;
-                padding: 12px 20px;
+                flex: 1 1 calc(50% - 15px);
             }
 
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section h2 {
-                font-size: 1.4em;
-                margin-bottom: 15px;
-            }
-
-            .achievement,
-            .journey-item,
-            .cert-item,
-            .expertise-card,
-            .project {
-                margin-bottom: 12px;
-            }
-
-            .contact-info a {
-                font-size: 0.75em;
+            .btn-download {
+                padding: 14px 25px;
+                font-size: 1.1em;
             }
         }
 
-        @media (max-width: 480px) {
-            header {
-                padding: 20px 10px;
-            }
-
-            header h1 {
-                font-size: 1.4em;
-                margin-bottom: 5px;
-            }
-
-            .title {
-                font-size: 0.9em;
-                margin-bottom: 10px;
-            }
-
-            .contact-info {
-                gap: 8px;
-                font-size: 0.7em;
-                flex-direction: column;
-            }
-
-            nav a {
-                padding: 8px 10px;
-                font-size: 0.8em;
-            }
-
-            section {
-                padding: 15px;
-                border-radius: 8px;
-            }
-
-            section h2 {
-                font-size: 1.3em;
-                margin-bottom: 12px;
-                padding-bottom: 8px;
-            }
-
-            .metric-box {
-                min-width: 130px;
-                padding: 10px 15px;
-            }
-
-            .metric-number {
-                font-size: 1.5em;
-            }
-
-            .metric-label {
-                font-size: 0.75em;
-            }
-
-            .btn {
-                padding: 10px 15px;
-                font-size: 0.9em;
-                display: block;
-                width: 100%;
-                margin: 8px 0;
-            }
-
-            .project-achievements ul {
-                margin-left: 15px;
-            }
-        }
-
-        /* ========== SMOOTH TRANSITIONS ========== */
-        a, button {
-            transition: all 0.3s ease;
-        }
-
-        /* ========== HIGHLIGHT ========== */
         .highlight {
             background: #fff3cd;
             padding: 2px 6px;
             border-radius: 3px;
             font-weight: bold;
-            color: #856404;
-        }
-
-        /* ========== SCROLL TO TOP BUTTON ========== */
-        #scrollToTopBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: #667eea;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        #scrollToTopBtn:hover {
-            background-color: #764ba2;
-        }
-
-        @media (max-width: 480px) {
-            #scrollToTopBtn {
-                bottom: 15px;
-                right: 15px;
-                width: 45px;
-                height: 45px;
-                font-size: 16px;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- ========== HEADER ========== -->
+    <!-- Header -->
     <header>
         <div class="header-content">
-            <h1>SHIRANJEEVI V</h1>
+            <h1>SHIRANJEEEVI V</h1>
             <p class="title">Senior SDET Engineer | AI-Driven Test Automation Architect</p>
             <div class="contact-info">
                 <a href="mailto:shiranjeeevi007@gmail.com">📧 shiranjeeevi007@gmail.com</a>
                 <a href="tel:+916383778113">📱 +91-6383778113</a>
-                <a href="https://linkedin.com/in/shiranjeevi-v-sdet" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/v-shiranjeeevi/" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/SHIRANJEEEVI-V" target="_blank">💻 GitHub</a>
             </div>
         </div>
     </header>
 
-    <!-- ========== NAVIGATION ========== -->
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#profile">Profile</a></li>
@@ -729,11 +476,11 @@
         </ul>
     </nav>
 
-    <!-- ========== MAIN CONTENT ========== -->
+    <!-- Main Content -->
     <div class="container">
         <!-- Profile Section -->
         <section id="profile">
-            <h2>📋 Professional Profile</h2>
+            <h2>01. Professional Profile</h2>
             <p class="profile-summary">
                 Senior SDET Engineer with <span class="highlight">4.5+ years</span> of expertise architecting 
                 enterprise-scale test automation frameworks across mobile (iOS/Android), web, and API ecosystems. 
@@ -747,7 +494,7 @@
 
         <!-- Expertise Section -->
         <section id="expertise">
-            <h2>🎯 Core Expertise</h2>
+            <h2>02. Core Expertise</h2>
             <div class="expertise-grid">
                 <div class="expertise-card">
                     <h4>Test Automation Frameworks</h4>
@@ -818,7 +565,7 @@
 
         <!-- Key Achievements -->
         <section id="achievements">
-            <h2>🏆 Key Achievements & Impact</h2>
+            <h2>03. Key Achievements & Impact</h2>
             
             <div class="metrics-container">
                 <div class="metric-box">
@@ -872,14 +619,14 @@
 
         <!-- Featured Projects -->
         <section id="projects">
-            <h2>🚀 Featured Projects</h2>
+            <h2>04. Featured Projects</h2>
 
             <div class="project">
-                <div class="project-title">Enterprise Mobile Automation - Global Multilingual Framework</div>
+                <div class="project-title">🎯 Enterprise Mobile Automation - Global Multilingual Framework</div>
                 <div class="project-overview">Led automation of iOS and Android applications supporting 8+ languages for global market</div>
-                <div class="project-achievements">
+                <div style="margin-top: 10px;">
                     <strong>Key Achievements:</strong>
-                    <ul>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>Architected multilingual automation framework with dynamic runtime language selection</li>
                         <li>Implemented BDD using Cucumber for improved test readability</li>
                         <li>Achieved 85% functional coverage across critical user journeys</li>
@@ -891,11 +638,11 @@
             </div>
 
             <div class="project">
-                <div class="project-title">AI-Assisted Web Automation with Intelligent Failure Analysis</div>
+                <div class="project-title">🤖 AI-Assisted Web Automation with Intelligent Failure Analysis</div>
                 <div class="project-overview">Implemented cutting-edge AI-driven test automation reducing development time and maintenance</div>
-                <div class="project-achievements">
+                <div style="margin-top: 10px;">
                     <strong>Key Achievements:</strong>
-                    <ul>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>Deployed Amazon Q for intelligent test script generation</li>
                         <li>Integrated GitHub Copilot for rapid test maintenance</li>
                         <li>Automated root cause detection reducing triage time by 87.5% (2hrs → 15min)</li>
@@ -907,11 +654,11 @@
             </div>
 
             <div class="project">
-                <div class="project-title">API Automation & Backend Validation with Database Cross-Validation</div>
+                <div class="project-title">📡 API Automation & Backend Validation with Database Cross-Validation</div>
                 <div class="project-overview">Built comprehensive API testing framework with integrated database validation</div>
-                <div class="project-achievements">
+                <div style="margin-top: 10px;">
                     <strong>Key Achievements:</strong>
-                    <ul>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>Designed comprehensive REST API test suites with request/response validation</li>
                         <li>Implemented database assertions validating data consistency</li>
                         <li>Detected 50+ production-critical data integrity issues pre-release</li>
@@ -923,11 +670,11 @@
             </div>
 
             <div class="project">
-                <div class="project-title">ML-Driven Test Dashboard & Intelligent Reporting Automation</div>
+                <div class="project-title">🧠 ML-Driven Test Dashboard & Intelligent Reporting Automation</div>
                 <div class="project-overview">Developed internal automation dashboard leveraging ML for test case prioritization</div>
-                <div class="project-achievements">
+                <div style="margin-top: 10px;">
                     <strong>Key Achievements:</strong>
-                    <ul>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>Built Flask-based automation dashboard using Playwright</li>
                         <li>Implemented ML algorithms analyzing historical test failure data</li>
                         <li>Optimized test case prioritization reducing execution time</li>
@@ -939,11 +686,11 @@
             </div>
 
             <div class="project">
-                <div class="project-title">Intelligent CI/CD Quality Gates Integration</div>
+                <div class="project-title">⚙️ Intelligent CI/CD Quality Gates Integration</div>
                 <div class="project-overview">Unified Jenkins, qTest, and JIRA for seamless test execution and defect tracking</div>
-                <div class="project-achievements">
+                <div style="margin-top: 10px;">
                     <strong>Key Achievements:</strong>
-                    <ul>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>Designed intelligent CI/CD quality gates</li>
                         <li>Automated defect logging with rich metadata (execution logs, stack traces, screenshots)</li>
                         <li>Enabled real-time defect tracking and notification</li>
@@ -957,66 +704,67 @@
 
         <!-- Certifications & Recognition -->
         <section id="certifications">
-            <h2>🎓 Certifications & Recognition</h2>
+            <h2>05. Certifications & Recognition</h2>
 
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <div class="cert-name">✓ Databricks – Generative AI Engineer Associate</div>
-                    <div class="cert-year">2024</div>
-                    <div class="cert-description">Advanced understanding of generative AI and machine learning applications in testing</div>
-                </div>
+            <div class="cert-item">
+                <a href="https://credentials.databricks.com/9ebda99e-9ec5-4779-ba30-845d8bdc6187#acc.brIJgAc8" target="_blank" class="cert-link">
+                    <span class="cert-name">✓ Databricks – Generative AI Engineer Associate</span>
+                </a>
+                <span class="cert-year">2024</span>
+                <div class="cert-description">Advanced understanding of generative AI and machine learning applications in testing.</div>
+            </div>
 
-                <div class="cert-item">
-                    <div class="cert-name">✓ IBM – Data Science Professional Certificate</div>
-                    <div class="cert-year">2023</div>
-                    <div class="cert-description">Data analysis, Python, ML algorithms, statistical methods</div>
-                </div>
+            <div class="cert-item">
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/THHC3PRSLNY8" target="_blank" class="cert-link">
+                    <span class="cert-name">✓ IBM – Data Science Professional Certificate</span>
+                </a>
+                <span class="cert-year">2023</span>
+                <div class="cert-description">Data analysis, Python, ML algorithms, statistical methods.</div>
+            </div>
 
-                <div class="cert-item">
-                    <div class="cert-name">✓ NPTEL – Java Programming Certification</div>
-                    <div class="cert-year">2022</div>
-                    <div class="cert-description">Advanced Java, object-oriented programming, design patterns</div>
-                </div>
+            <div class="cert-item">
+                <a href="https://drive.google.com/file/d/1zTdvmAFstPd1G3zCbEt9YFGXA1mTFaoS/view?usp=sharing" target="_blank" class="cert-link">
+                    <span class="cert-name">✓ NPTEL – Java Programming Certification</span>
+                </a>
+                <span class="cert-year">2022</span>
+                <div class="cert-description">Advanced Java, object-oriented programming, design patterns.</div>
+            </div>
 
-                <div class="cert-item">
-                    <div class="cert-name">✓ Runner-up – Smart India Hackathon 2020</div>
-                    <div class="cert-year">2020</div>
-                    <div class="cert-description">MHRD, AICTE, Persistent Systems - Innovation in problem-solving</div>
-                </div>
+            <div class="cert-item">
+                <a href="https://leetcode.com/u/shiranjeeevi007/" target="_blank" class="cert-link">
+                    <span class="cert-name">✓ LeetCode – 400+ DSA Problems Solved</span>
+                </a>
+                <span class="cert-year">Ongoing</span>
+                <div class="cert-description">Top performer in data structures and algorithms.</div>
+            </div>
 
-                <div class="cert-item">
-                    <div class="cert-name">✓ LeetCode – 400+ DSA Problems Solved</div>
-                    <div class="cert-year">Ongoing</div>
-                    <div class="cert-description">Top performer in data structures and algorithms</div>
-                </div>
+            <div class="cert-item">
+                <a href="https://www.hackerrank.com/profile/shiranjeeevi007" target="_blank" class="cert-link">
+                    <span class="cert-name">✓ HackerRank Profile – Gold Badge (Java), Silver Badge (Problem Solving)</span>
+                </a>
+                <span class="cert-year">Ongoing</span>
+                <div class="cert-description">Expert-level coding proficiency benchmarks.</div>
+            </div>
 
-                <div class="cert-item">
-                    <div class="cert-name">✓ HackerRank – Gold Badge (Java)</div>
-                    <div class="cert-year">Ongoing</div>
-                    <div class="cert-description">Expert-level coding proficiency in Java</div>
-                </div>
+            <div class="cert-item">
+                <a href="https://www.hackerrank.com/certificates/f4e6007600ce" target="_blank" class="cert-link">
+                    <span class="cert-name">✓ HackerRank Problem Solving Certification</span>
+                </a>
+                <span class="cert-year">Verified</span>
+                <div class="cert-description">Validation of complex logic and algorithmic design workflows.</div>
             </div>
         </section>
 
         <!-- Professional Journey -->
         <section id="journey">
-            <h2>💼 Professional Journey</h2>
+            <h2>06. Professional Journey</h2>
 
             <div class="journey-item">
                 <div class="journey-period">2022 - Present</div>
-                <div class="journey-role">Senior SDET Engineer @ Accenture, Bengaluru</div>
+                <div class="journey-role">Custom Software Engineering Senior Analyst @ Accenture, Bengaluru</div>
                 <div class="journey-description">
                     Leading test automation architecture, pioneering AI implementation, mastering CI/CD integration, 
                     and mentoring team members on SDET best practices and framework design patterns.
-                </div>
-            </div>
-
-            <div class="journey-item">
-                <div class="journey-period">2020 - 2022</div>
-                <div class="journey-role">QA Automation Engineer @ [Previous Company]</div>
-                <div class="journey-description">
-                    Developed Selenium framework for web applications, implemented API automation, 
-                    and designed comprehensive test strategies.
                 </div>
             </div>
 
@@ -1031,45 +779,45 @@
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
-            <h2>📞 Get In Touch</h2>
-            <p style="margin-bottom: clamp(15px, 3vw, 20px); font-size: clamp(0.9em, 2vw, 1em);">
+            <h2>07. Get In Touch</h2>
+            <p style="margin-bottom: 20px;">
                 I'm always interested in discussing test automation, AI-driven QA, and career opportunities. 
                 Feel free to reach out!
             </p>
             
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <span class="contact-item-label">📧 Email</span>
+            <ul>
+                <li class="contact-item">
+                    <span>📧 Email</span><br>
                     <a href="mailto:shiranjeeevi007@gmail.com">shiranjeeevi007@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-item-label">📱 Phone</span>
+                </li>
+                <li class="contact-item">
+                    <span>📱 Phone</span><br>
                     <a href="tel:+916383778113">+91-6383778113</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-item-label">🔗 LinkedIn</span>
-                    <a href="https://linkedin.com/in/shiranjeevi-v-sdet" target="_blank" rel="noopener noreferrer">linkedin.com/in/shiranjeevi-v-sdet</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-item-label">💻 GitHub</span>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/shiranjeevi-v</a>
-                </div>
-            </div>
+                </li>
+                <li class="contact-item">
+                    <span>🔗 LinkedIn</span><br>
+                    <a href="https://www.linkedin.com/in/v-shiranjeeevi/" target="_blank">linkedin.com/in/v-shiranjeeevi/</a>
+                </li>
+                <li class="contact-item">
+                    <span>💻 GitHub</span><br>
+                    <a href="https://github.com/SHIRANJEEEVI-V" target="_blank">github.com/SHIRANJEEEVI-V</a>
+                </li>
+            </ul>
 
-            <div style="margin-top: clamp(20px, 3vw, 30px);">
-                <a href="mailto:shiranjeeevi007@gmail.com?subject=Resume Request" class="btn">📥 Request Resume</a>
+            <!-- Easily Visible Download Button Container -->
+            <div class="download-container">
+                <a href="./Shiranjeevi_V_Senior_SDET_Architect.pdf" download="Shiranjeevi_V_Senior_SDET_Architect.pdf" class="btn-download">
+                    📥 Download Resume (PDF)
+                </a>
             </div>
         </section>
     </div>
 
-    <!-- ========== SCROLL TO TOP BUTTON ========== -->
-    <button id="scrollToTopBtn" title="Go to top">↑</button>
-
-    <!-- ========== FOOTER ========== -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Shiranjeevi V. All Rights Reserved.</p>
+        <p>&copy; 2026 Shiranjeeevi V. All Rights Reserved.</p>
         <p>Senior SDET Engineer | AI-Driven Test Automation Architect | Enterprise Quality Assurance Expert</p>
-        <p style="margin-top: clamp(10px, 2vw, 15px); font-size: clamp(0.75em, 2vw, 0.85em);">
+        <p style="margin-top: 15px; font-size: 0.9em;">
             Thank you for visiting my portfolio. I'm passionate about transforming testing through innovation and excellence.
         </p>
     </footer>
@@ -1081,47 +829,11 @@
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                if (targetSection) {
+                if(targetSection) {
                     targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
-
-        // Scroll to top button functionality
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.style.display = 'block';
-            } else {
-                scrollToTopBtn.style.display = 'none';
-            }
-        });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.15)';
-            }
-        });
-
-        // Prevent zoom on double tap
-        let lastTouchEnd = 0;
-        document.addEventListener('touchend', function(event) {
-            let now = new Date().getTime();
-            if (now - lastTouchEnd <= 300) {
-                event.preventDefault();
-            }
-            lastTouchEnd = now;
-        }, false);
     </script>
 </body>
 </html>
-
