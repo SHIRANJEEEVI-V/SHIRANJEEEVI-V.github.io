@@ -406,7 +406,6 @@
                 border-radius: 8px;
             }
 
-            /* Display the hamburger trigger icon wrapper */
             .hamburger-label {
                 display: block;
                 color: white;
@@ -418,7 +417,6 @@
                 background: #252525;
             }
 
-            /* Hide the list links by default on mobile load */
             nav ul {
                 display: none;
                 flex-direction: column;
@@ -437,7 +435,6 @@
                 font-size: 1.05em;
             }
 
-            /* Pure CSS Trigger: When checkbox is checked, immediately show the navigation list */
             .menu-toggle:checked ~ ul {
                 display: flex;
             }
@@ -500,7 +497,7 @@
         <section id="profile">
             <h2>01. Professional Profile</h2>
             <p class="profile-summary">
-                Senior SDET Engineer with <span class="highlight">4.5+ years</span> of expertise architecting 
+                Senior SDET Engineer with <span class="highlight" id="exp-badge">4.5+ years</span> of expertise architecting 
                 enterprise-scale test automation frameworks across mobile (iOS/Android), web, and API ecosystems. 
                 <span class="highlight">AI-driven automation innovator</span> leveraging Amazon Q, GitHub Copilot, 
                 and self-healing test scripts to transform testing practices. Proven track record of delivering 
@@ -564,7 +561,6 @@
                         <li>Git/GitHub</li>
                         <li>qTest Management</li>
                         <li>JIRA Integration</li>
-                        <li>Docker & Linux</li>
                     </ul>
                 </div>
 
@@ -575,7 +571,6 @@
                         <li>Multilingual Frameworks</li>
                         <li>BDD Implementation</li>
                         <li>Backend Validation</li>
-                        <li>Performance Testing</li>
                     </ul>
                 </div>
             </div>
@@ -728,7 +723,7 @@
                 <a href="https://credentials.databricks.com/9ebda99e-9ec5-4779-ba30-845d8bdc6187#acc.brIJgAc8" target="_blank" class="cert-link">
                     <span class="cert-name">✓ Databricks – Generative AI Engineer Associate</span>
                 </a>
-                <span class="cert-year">2024</span>
+                <span class="cert-year">2025</span>
                 <div class="cert-description">Advanced understanding of generative AI and machine learning applications in testing.</div>
             </div>
 
@@ -736,7 +731,7 @@
                 <a href="https://www.coursera.org/account/accomplishments/professional-cert/THHC3PRSLNY8" target="_blank" class="cert-link">
                     <span class="cert-name">✓ IBM – Data Science Professional Certificate</span>
                 </a>
-                <span class="cert-year">2023</span>
+                <span class="cert-year">2020</span>
                 <div class="cert-description">Data analysis, Python, ML algorithms, statistical methods.</div>
             </div>
 
@@ -744,7 +739,7 @@
                 <a href="https://drive.google.com/file/d/1zTdvmAFstPd1G3zCbEt9YFGXA1mTFaoS/view?usp=sharing" target="_blank" class="cert-link">
                     <span class="cert-name">✓ NPTEL – Java Programming Certification</span>
                 </a>
-                <span class="cert-year">2022</span>
+                <span class="cert-year">2019</span>
                 <div class="cert-description">Advanced Java, object-oriented programming, design patterns.</div>
             </div>
 
@@ -765,10 +760,10 @@
             </div>
 
             <div class="cert-item">
-                <a href="https://www.hackerrank.com/certificates/f4e6007600ce" target="_blank" class="cert-link">
+                <a href="https://www.hackerrank.com/certificates/iframe/f4e6007600ce" target="_blank" class="cert-link">
                     <span class="cert-name">✓ HackerRank Problem Solving Certification</span>
                 </a>
-                <span class="cert-year">Verified</span>
+                <span class="cert-year">2020</span>
                 <div class="cert-description">Validation of complex logic and algorithmic design workflows.</div>
             </div>
         </section>
@@ -841,6 +836,19 @@
     </footer>
 
     <script>
+        // Dynamic Experience Calculation (Jan 2022 to Current Date)
+        function calculateExperience() {
+            const startDate = new Date('2022-01-01');
+            const now = new Date();
+            const totalMonths = (now.getFullYear() - startDate.getFullYear()) * 12 + (now.getMonth() - startDate.getMonth());
+            const years = (totalMonths / 12).toFixed(1);
+            const expBadge = document.getElementById('exp-badge');
+            if (expBadge) {
+                expBadge.textContent = `${years}+ years`;
+            }
+        }
+        calculateExperience();
+
         // Smooth scrolling & automatic close panel logic for mobile
         const menuCheckbox = document.getElementById('menu-checkbox');
         document.querySelectorAll('nav a').forEach(link => {
